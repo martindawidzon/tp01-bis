@@ -2,9 +2,9 @@ class Complejo
 {
    Dictionary<int, Cabaña> dicCabañas = new  Dictionary<int, Cabaña>();
 
-   public Complejo(Dictionary<int, Cabaña> dicCabañas)
+   public Complejo()
    {
-    this.dicCabañas = dicCabañas;
+    inicializarCabañas();
    }
    public void inicializarCabañas()
    {

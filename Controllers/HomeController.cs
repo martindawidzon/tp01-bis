@@ -15,6 +15,8 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        Complejo complejo = new Complejo();
+        ViewBag.dicCabañas = complejo.getDicCabañas()
         return View();
     }
 
@@ -27,5 +29,11 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+    public IActionResult Detalle(int id)
+    {
+        Complejo complejoID = new Complejo();
+        ViewBag.cabaña = complejoID.getCabañaPorID(id);
+        return View();
     }
 }
