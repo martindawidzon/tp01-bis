@@ -1,15 +1,15 @@
 class Cabaña
 {
     int Id;
-    string nombre
+    string nombre;
     string descripción;
     int capacidad;
-    List<string> fotos = new List<string>
-    List<string> ambientes = new List<string>
+    List<string> fotos = new List<string>();
+    List<string> ambientes = new List<string>();
 
-    public cabaña(int Id, string nombre, string descripción, int capacidad, List<string> fotos, List<string> ambientes)
+    public Cabaña(int Id, string nombre, string descripción, int capacidad, List<string> fotos, List<string> ambientes)
     {
-        this.id = id;
+        this.Id = Id;
         this.nombre = nombre;
         this.descripción = descripción;
         this.capacidad = capacidad;
@@ -18,7 +18,7 @@ class Cabaña
     }
     public int getId()
     {
-        return this.id;
+        return this.Id;
     }
     public string getNombre()
     {
@@ -38,7 +38,7 @@ class Cabaña
     }
     public List<string> getAmbientes()
     {
-        return this.getAmbientes;
+        return this.ambientes;
     }
 
 }

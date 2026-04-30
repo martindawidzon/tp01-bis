@@ -16,7 +16,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         Complejo complejo = new Complejo();
-        ViewBag.dicCabañas = complejo.getDicCabañas()
+        ViewBag.dicCabañas = complejo.getDicCabañas();
         return View();
     }
 
