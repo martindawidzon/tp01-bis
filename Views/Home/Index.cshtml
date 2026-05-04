@@ -4,8 +4,9 @@
 
 <div class="text-center">
     <h1 class="display-4">Queres ver cabañas?</h1>
-    @foreach(Cabaña numero in ViewBag.dicCabañas.Keys)
+    @foreach(int numero in ViewBag.dicCabañas.Keys)
     {
-        <p>@ViewBag.dicCabañas[numero]getNombre()</p>
+        <a href="@Url.Action("Detalle", "Home", new { id = numero } )">@ViewBag.dicCabañas[numero].getNombre()</a><br>
+        <img src="@ViewBag.dicCabañas[numero].getFotos()[1]" style="width: 200px; height: 150px;"><br>
     }
 </div>

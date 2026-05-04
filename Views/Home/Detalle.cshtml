@@ -1,0 +1,9 @@
+<a href="@Url.Action("Index", "Home")">Volver a la lista</a>
+<h1>@ViewBag.cabaña.getNombre()</h1>
+<p>@ViewBag.cabaña.getDescripcion()</p>
+<p>Capacidad: @ViewBag.cabaña.getCapacidad() personas</p>
+<img src="@ViewBag.cabaña.getFotos()[0]" style="width: 400px; height: 300px;"><br>
+<img src="@ViewBag.cabaña.getFotos()[1]" style="width: 400px; height: 300px;"><br>
+<h2>Ambientes</h2>
+<p>@ViewBag.cabaña.getAmbientes()[0]</p>
+<p>@ViewBag.cabaña.getAmbientes()[1]</p>
